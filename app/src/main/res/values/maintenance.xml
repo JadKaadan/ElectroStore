@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_maintenance">Maintenance</string>
+    <string name="maintenance_sub">Repairs, setups &amp; happy returns.</string>
+    <string name="jobs_active">Active</string>
+    <string name="jobs_overdue">Overdue</string>
+    <string name="job_received">Received</string>
+    <string name="job_working">Working</string>
+    <string name="job_waiting">Waiting</string>
+    <string name="job_ready">Ready</string>
+    <string name="job_collected">Collected</string>
+    <string name="job_cancelled">Cancelled</string>
+    <string name="jobs_tab">Job board</string>
+    <string name="services_tab">Services</string>
+    <string name="svc_back">Back</string>
+    <string name="svc_menu">Open menu</string>
+    <string name="svc_clear_search">Clear search</string>
+    <string name="svc_search">Find a service…</string>
+    <string name="jobs_search">Customer, phone, device or job number…</string>
+    <string name="job_add">+ New job</string>
+    <string name="svc_add">+ Add service</string>
+    <string name="svc_restore">Restore removed services</string>
+    <string name="svc_empty">Your service menu starts here.\nAdd a service or restore one below.</string>
+    <string name="svc_no_results">No services match this search.</string>
+    <string name="jobs_empty">A clear workbench.\nTap + New job when a customer drops something off.</string>
+    <string name="jobs_no_results">No jobs match this view.\nTry All or clear the search.</string>
+    <string name="job_choose_service">What are we doing?</string>
+    <string name="svc_start_job">Tap to start a job →</string>
+    <string name="svc_manage_named">Manage %1$s</string>
+    <string name="svc_edit">Edit service</string>
+    <string name="svc_remove">Remove service</string>
+    <string name="svc_remove_message">Remove this service from the menu? Existing customer jobs and their steps will stay. You can restore it later.</string>
+    <string name="svc_none_removed">No removed services to restore.</string>
+    <string name="svc_editor_sub">Make the menu work for your shop.</string>
+    <string name="svc_name">Service name</string>
+    <string name="svc_name_hint">e.g. Game console setup</string>
+    <string name="svc_override_help">Leave a field empty to keep its built-in English and Arabic version.</string>
+    <string name="svc_steps">Your quick steps (optional)</string>
+    <string name="svc_steps_hint">One short step per line</string>
+    <string name="svc_steps_help">Up to 30 steps. Empty uses the guide below. Changes apply to new jobs; existing checklists stay as they are.</string>
+    <string name="svc_default_guide">Built-in guide</string>
+    <string name="svc_save">Save service</string>
+    <string name="svc_required">Please fill this in.</string>
+    <string name="svc_too_many_steps">Keep the guide to 30 steps or fewer.</string>
+    <string name="svc_save_failed">Could not save. Your changes are still on screen; please try again.</string>
+    <string name="job_edit">Edit details</string>
+    <string name="job_intake_title">A little detail. A smoother handoff.</string>
+    <string name="job_intake_sub">Save the customer, device and what needs doing. The service checklist comes next.</string>
+    <string name="job_customer">Customer name *</string>
+    <string name="job_customer_hint">Full name</string>
+    <string name="job_country">Country calling code</string>
+    <string name="job_country_hint">+961</string>
+    <string name="job_phone">Customer WhatsApp number *</string>
+    <string name="job_phone_hint">70 123 456 or +961 70 123 456</string>
+    <string name="job_phone_help">The code above is used for local numbers. A number starting with + or 00 already includes its own country code.</string>
+    <string name="job_phone_invalid">Enter a valid phone number with the correct country code.</string>
+    <string name="job_device">Device / item *</string>
+    <string name="job_device_hint">e.g. Dell laptop, black, with charger</string>
+    <string name="job_notes">Work requested &amp; intake notes</string>
+    <string name="job_notes_hint">What is wrong? What needs installing? Note the model, serial number, damage and accessories.</string>
+    <string name="job_due_label">Promised pickup date (optional)</string>
+    <string name="job_choose_due">Choose a date</string>
+    <string name="job_clear_due">Clear pickup date</string>
+    <string name="job_no_due">No pickup date set</string>
+    <string name="job_due">Pickup: %1$s</string>
+    <string name="job_fee">Service fee · USD (optional)</string>
+    <string name="job_paid">Already paid · USD (optional)</string>
+    <string name="job_amount_hint">0.00</string>
+    <string name="job_money_help">Paid amounts are included in revenue on the payment date. Enter the total paid so far; only the difference is recorded.</string>
+    <string name="job_paid_invalid">Use non-negative amounts. Paid cannot be more than the service fee.</string>
+    <string name="job_save">Save job</string>
+    <string name="job_discard_title">Leave without saving?</string>
+    <string name="job_discard_message">The changes on this form have not been saved.</string>
+    <string name="job_discard">Discard changes</string>
+    <string name="job_change_status">Change status</string>
+    <string name="job_payment">Service payment</string>
+    <string name="job_payment_summary">Fee %1$s  ·  Paid %2$s  ·  Due %3$s</string>
+    <string name="job_quick_steps">Quick steps</string>
+    <string name="job_steps_help">Tick each step as you go. Progress saves automatically. For opening a device, follow its model-specific repair guide.</string>
+    <string name="job_step_count">%1$d of %2$d steps done</string>
+    <string name="job_start_work">Start / resume work</string>
+    <string name="job_mark_ready">Mark ready for pickup</string>
+    <string name="job_notify">WhatsApp pickup message</string>
+    <string name="job_mark_collected">Mark as collected</string>
+    <string name="job_created_at">Received %1$s</string>
+    <string name="job_draft_opened">Pickup draft opened %1$s. This does not confirm it was sent.</string>
+    <string name="job_delete">Delete job</string>
+    <string name="job_delete_message">Permanently delete this job and remove its service payments from revenue?</string>
+    <string name="job_collect_message">Has the customer received the device? This moves the job to Collected.</string>
+    <string name="job_cancel_message">Cancel this job? It will remain in history and can be reopened.</string>
+    <string name="job_confirm">Confirm</string>
+    <string name="job_message_title">Review pickup message</string>
+    <string name="job_message_to">Customer number: %1$s</string>
+    <string name="job_open_whatsapp">Open WhatsApp</string>
+    <string name="job_message_help">Check the number and edit the text if needed. WhatsApp opens a draft; you press Send there. Sending needs internet in WhatsApp.</string>
+    <string name="job_whatsapp_missing">Install WhatsApp or a browser to open this customer chat.</string>
+    <string name="job_pickup_template">Hi %1$s, your %2$s is ready for pickup!\nService completed: %3$s.\nYou can come and collect it from %4$s. Thank you!\nRef: %5$s</string>
+    <string name="stock_save_failed">Could not complete this sale. The product may have changed; go back and try again.</string>
+    <string name="backup_maintenance"> · %1$d maintenance jobs · %2$d services</string>
+    <string name="svc_custom">Custom service</string>
+    <string name="svc_format">Format &amp; system setup</string>
+    <string name="svc_apps">Apps &amp; software</string>
+    <string name="svc_diagnosis">Device checkup</string>
+    <string name="svc_repair">Hardware repair</string>
+    <string name="svc_cleanup">Cleaning &amp; cooling</string>
+    <string name="svc_backup">Backup &amp; transfer</string>
+    <string name="svc_security">Virus &amp; pop-up cleanup</string>
+    <string name="svc_upgrade">SSD &amp; memory upgrade</string>
+    <string name="svc_screen">Screen replacement</string>
+    <string name="svc_battery">Battery &amp; charging check</string>
+    <string name="svc_printer">Printer setup &amp; fixes</string>
+    <string name="svc_wifi">Wi-Fi &amp; router setup</string>
+    <string-array name="tips_format">
+        <item>Ask what must be kept. Agree on the reset or reinstall before erasing anything.</item>
+        <item>Copy important files to a separate drive and open a few to check the copy.</item>
+        <item>Have the owner check their account access and recovery key if the drive is locked.</item>
+        <item>Use official installation media for the correct device. Keep the charger connected.</item>
+        <item>Restore the agreed files. Test startup, Wi-Fi, sound and apps with the customer.</item>
+    </string-array>
+    <string-array name="tips_apps">
+        <item>Write down the apps and versions the customer wants.</item>
+        <item>Check the device has enough space and supports those apps.</item>
+        <item>Use the official app store or publisher installer. Check any licence with the owner.</item>
+        <item>Let the customer enter their own passwords. Open each installed app once.</item>
+        <item>Test the main feature and show the customer where to find the app.</item>
+    </string-array>
+    <string-array name="tips_diagnosis">
+        <item>Ask when the problem started and what happened just before it.</item>
+        <item>Note the model, visible damage, charger and any error message.</item>
+        <item>Try to repeat the problem. Start with power, cables and a normal restart.</item>
+        <item>Check one thing at a time and write down the result.</item>
+        <item>Explain what you found and agree on the next repair and price.</item>
+    </string-array>
+    <string-array name="tips_repair">
+        <item>Confirm the fault and record the device condition before starting.</item>
+        <item>Explain the proposed repair and get the customer to agree to the cost.</item>
+        <item>Power off and unplug. Use the exact model repair guide for opening and battery isolation.</item>
+        <item>Keep screws labelled. Only use a compatible part and suitable tools.</item>
+        <item>Reassemble, repeat the original test and check the other main functions.</item>
+    </string-array>
+    <string-array name="tips_cleanup">
+        <item>Ask about noise or overheating and inspect for damage.</item>
+        <item>Shut down, unplug and follow the device guide before opening it.</item>
+        <item>Clean the outside with a soft lint-free cloth. Keep liquid out of openings.</item>
+        <item>Use the maker\'s method for vents and fans. Never spray liquid into the device.</item>
+        <item>Close everything securely and check fan noise and normal temperature.</item>
+    </string-array>
+    <string-array name="tips_backup">
+        <item>Ask exactly which files should move and where they should go.</item>
+        <item>Check that the destination has enough free space.</item>
+        <item>Copy the files; keep the original until the customer has checked the copy.</item>
+        <item>Open sample photos and documents from the new location.</item>
+        <item>Let the customer confirm their important files and return the backup drive.</item>
+    </string-array>
+    <string-array name="tips_security">
+        <item>Ask about unusual pop-ups or apps and protect important files first.</item>
+        <item>If a break-in is suspected, disconnect the affected device from the network.</item>
+        <item>Use the built-in security app or a trusted official scanner; run a full scan.</item>
+        <item>Review unknown apps, browser extensions and notification permissions with the owner.</item>
+        <item>Restart and test. If an account was exposed, have the owner change its password from a clean device.</item>
+    </string-array>
+    <string-array name="tips_upgrade">
+        <item>Check the exact model, supported part type and available slots.</item>
+        <item>Back up files before changing a storage drive. Agree on the new part and cost.</item>
+        <item>Shut down and unplug; follow the model guide to isolate the battery and fit the part.</item>
+        <item>Check the system sees the new memory or drive at the correct capacity.</item>
+        <item>Test startup and open several files or apps. Return the old part if agreed.</item>
+    </string-array>
+    <string-array name="tips_screen">
+        <item>Record the model and test touch, display and cameras before repair.</item>
+        <item>Check the replacement is compatible and agree on the price.</item>
+        <item>Power off. Follow the model repair guide; stop if the battery looks damaged.</item>
+        <item>Keep screws and cables organised; avoid forcing connectors.</item>
+        <item>Test touch across the screen, brightness, cameras and buttons before handoff.</item>
+    </string-array>
+    <string-array name="tips_battery">
+        <item>Ask how long the charge lasts and whether the device gets unusually hot.</item>
+        <item>Stop using or charging a swollen, leaking or very hot battery. Refer it to a trained battery repairer.</item>
+        <item>If there is no damage, test with a known-good compatible cable and charger.</item>
+        <item>Check the charging port without inserting metal. Follow the maker guide for any replacement.</item>
+        <item>Test charging and normal use, then explain the result to the customer.</item>
+    </string-array>
+    <string-array name="tips_printer">
+        <item>Write down the model and check paper, ink or toner, and any error lights.</item>
+        <item>Check the power and USB cable or that both devices use the same Wi-Fi.</item>
+        <item>Install the official driver for the correct printer and computer.</item>
+        <item>Clear stuck print jobs and print a test page.</item>
+        <item>Try the customer\'s usual document and test scanning if available.</item>
+    </string-array>
+    <string-array name="tips_wifi">
+        <item>Ask whether the problem affects one device or everyone.</item>
+        <item>Check cables and lights. Restart normally; do not factory-reset without the owner\'s approval.</item>
+        <item>Check the Wi-Fi name and password with the owner. Keep provider settings before changing them.</item>
+        <item>Use the router\'s supported security settings and an owner-chosen strong password.</item>
+        <item>Test a website on two devices and show the owner how to reconnect.</item>
+    </string-array>
+    <string-array name="tips_custom">
+        <item>Ask what the customer needs and write it down.</item>
+        <item>Record the device condition and any accessories received.</item>
+        <item>Agree on the work, price and any files that must be protected.</item>
+        <item>Do the agreed work, then test the result.</item>
+        <item>Explain what was done and check everything with the customer.</item>
+    </string-array>
+</resources>

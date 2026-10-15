@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="100dp" android:height="100dp" android:viewportWidth="100" android:viewportHeight="100">
+<path android:fillColor="@color/desk_tint" android:pathData="M50,2 A48,48 0,1 1,50 98 A48,48 0,1 1,50 2"/>
+<path android:fillColor="@color/desk_ink" android:pathData="M22,27 Q22,22 27,22 L75,22 Q80,22 80,27 L80,61 L22,61 Z"/>
+<path android:fillColor="@color/desk_surface" android:pathData="M27,27 L75,27 L75,56 L27,56 Z"/>
+<path android:fillColor="@color/desk_ink" android:pathData="M22,61 L80,61 L90,73 Q91,77 85,77 L17,77 Q11,77 12,73 Z"/>
+<path android:fillColor="@color/desk_soft" android:pathData="M43,66 L59,66 L62,71 L40,71 Z"/>
+<path android:fillColor="#00000000" android:strokeColor="@color/desk_soft" android:strokeWidth="3" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M42,42 L48,48 L60,35"/>
+<path android:fillColor="@color/desk_soft" android:pathData="M82,5 L84,12 L91,14 L84,16 L82,23 L80,16 L73,14 L80,12 Z M15,32 L17,37 L22,39 L17,41 L15,46 L13,41 L8,39 L13,37 Z"/>
+<path android:fillColor="@color/desk_soft" android:pathData="M71,83 A3,3 0,1 1,71 89 A3,3 0,1 1,71 83"/>
+</vector>

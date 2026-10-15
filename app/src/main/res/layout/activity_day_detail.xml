@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/hdr_cyan" android:paddingStart="8dp"
+        android:paddingEnd="20dp" android:paddingTop="22dp" android:paddingBottom="22dp">
+        <ImageView android:id="@+id/back" android:tint="@color/ink" android:layout_width="44dp" android:layout_height="44dp"
+            android:padding="10dp" android:background="@drawable/circle_soft"
+            android:src="@drawable/ic_back" android:layout_alignParentTop="true" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_below="@id/back"
+            android:paddingStart="12dp" android:paddingTop="12dp">
+            <TextView android:id="@+id/dateTxt" style="@style/HeaderTitle" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:paddingTop="10dp" android:text="@string/cal_day_total"
+                android:textSize="12sp" android:textStyle="bold"
+                android:textColor="@color/white" android:alpha="0.78" />
+            <TextView android:id="@+id/revUsd"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:paddingTop="2dp" android:textSize="36sp" android:textStyle="bold"
+                android:textColor="@color/white" />
+            <TextView android:id="@+id/revLbp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="15sp" android:textColor="@color/ink_soft" />
+            <TextView android:id="@+id/profitTxt"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:background="@drawable/tile_soft"
+                android:paddingStart="14dp" android:paddingEnd="14dp"
+                android:paddingTop="8dp" android:paddingBottom="8dp"
+                android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingStart="20dp" android:paddingTop="18dp" android:paddingBottom="4dp"
+        android:text="@string/sold_this_day" android:textSize="13sp"
+        android:textStyle="bold" android:textColor="@color/ink_faint" />
+
+    <ListView android:id="@+id/list"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:divider="@null" android:dividerHeight="0dp"
+        android:paddingStart="16dp" android:paddingEnd="16dp"
+        android:paddingTop="6dp" android:paddingBottom="16dp" android:clipToPadding="false" />
+</LinearLayout>

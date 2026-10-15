@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/hdr_cyan" android:paddingStart="8dp"
+        android:paddingEnd="14dp" android:paddingTop="22dp" android:paddingBottom="20dp">
+
+        <ImageView android:id="@+id/back" android:layout_width="44dp" android:layout_height="44dp"
+            android:padding="10dp" android:background="@drawable/circle_soft"
+            android:tint="@color/ink" android:src="@drawable/ic_back"
+            android:layout_centerVertical="true" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            style="@style/HeaderTitle" android:layout_toEndOf="@id/back"
+            android:layout_centerVertical="true" android:paddingStart="12dp"
+            android:text="@string/calendar_title" />
+
+        <TextView android:id="@+id/btnToday"
+            android:layout_width="wrap_content" android:layout_height="40dp"
+            android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+            android:gravity="center" android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:background="@drawable/tile_soft" android:text="@string/cal_go_today"
+            android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@drawable/bg_card"
+        android:elevation="1dp"
+        android:layout_marginStart="12dp" android:layout_marginEnd="12dp"
+        android:layout_marginTop="14dp" android:paddingBottom="10dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingTop="8dp" android:paddingBottom="4dp">
+
+            <ImageView android:id="@+id/prevMonth"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:padding="14dp" android:src="@drawable/ic_back"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+            <TextView android:id="@+id/monthLabel"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:gravity="center"
+                android:textSize="18sp" android:textStyle="bold" android:textColor="@color/ink" />
+
+            <ImageView android:id="@+id/nextMonth"
+                android:layout_width="48dp" android:layout_height="48dp"
+                android:padding="14dp" android:src="@drawable/ic_chevron"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/weekdays"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="6dp" android:paddingEnd="6dp" android:paddingBottom="4dp" />
+
+        <LinearLayout android:id="@+id/grid"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="6dp" android:paddingEnd="6dp" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingStart="14dp" android:paddingEnd="10dp"
+            android:paddingTop="6dp" android:paddingBottom="2dp">
+            <TextView android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:text="@string/cal_tap_days"
+                android:textSize="12sp" android:textColor="@color/ink_soft" />
+            <TextView android:id="@+id/btnClear"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:gravity="center" android:paddingStart="14dp" android:paddingEnd="14dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true" android:focusable="true"
+                android:text="@string/cal_clear_selection" android:textSize="12sp"
+                android:textStyle="bold" android:textColor="@color/ink" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:scrollbars="none">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@drawable/bg_card"
+                android:elevation="1dp" android:padding="18dp">
+                <TextView android:id="@+id/dayLabel"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="17sp" android:textStyle="bold" android:textColor="@color/ink" />
+                <TextView android:id="@+id/totalLabel"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:paddingTop="10dp" android:text="@string/cal_day_total"
+                    android:textSize="12sp" android:textStyle="bold"
+                    android:textColor="@color/ink_faint" />
+                <TextView android:id="@+id/dayRevenue"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:paddingTop="2dp" android:textSize="30sp" android:textStyle="bold"
+                    android:textColor="@color/cyan" />
+                <TextView android:id="@+id/dayRevenueLbp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="14sp" android:textColor="@color/ink_soft" />
+                <TextView android:id="@+id/dayCounts"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:paddingTop="10dp" android:textSize="14sp"
+                    android:textColor="@color/ink_faint" />
+            </LinearLayout>
+
+            <TextView android:id="@+id/nothing"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="30dp" android:gravity="center" android:visibility="gone"
+                android:textSize="16sp" android:textColor="@color/ink_faint"
+                android:text="@string/cal_nothing" />
+
+            <TextView android:id="@+id/salesLabel" style="@style/Label"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="22dp" android:text="@string/cal_sales" />
+            <LinearLayout android:id="@+id/salesBox"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <TextView android:id="@+id/ordersLabel" style="@style/Label"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="22dp" android:text="@string/cal_orders" />
+            <LinearLayout android:id="@+id/ordersBox"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <Space android:layout_width="match_parent" android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

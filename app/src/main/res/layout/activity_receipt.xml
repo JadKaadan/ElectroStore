@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/hdr_pink" android:paddingStart="8dp"
+        android:paddingEnd="14dp" android:paddingTop="22dp" android:paddingBottom="20dp">
+        <ImageView android:id="@+id/back" android:tint="@color/ink" android:layout_width="44dp" android:layout_height="44dp"
+            android:padding="10dp" android:background="@drawable/circle_soft"
+            android:src="@drawable/ic_back" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_toEndOf="@id/back"
+            android:layout_centerVertical="true" android:paddingStart="12dp">
+            <TextView style="@style/HeaderTitle" android:text="@string/receipt_title" />
+            <TextView android:id="@+id/sub" style="@style/HeaderSub" />
+        </LinearLayout>
+        <ImageView android:id="@+id/share" android:tint="@color/ink" android:layout_width="44dp" android:layout_height="44dp"
+            android:layout_alignParentEnd="true" android:layout_centerVertical="true"
+            android:padding="11dp" android:background="@drawable/circle_soft"
+            android:src="@drawable/ic_share" />
+    </RelativeLayout>
+
+    <WebView android:id="@+id/web"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:background="@color/bg" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@color/card"
+        android:elevation="8dp" android:padding="14dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button android:id="@+id/btnStatus" style="@style/BigButton"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:background="@drawable/btn_outline" android:textColor="@color/ink"
+                android:text="@string/mark_collected" />
+            <Space android:layout_width="10dp" android:layout_height="1dp" />
+            <Button android:id="@+id/btnPrint" style="@style/BigButton"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:background="@drawable/btn_pink" android:text="@string/print" />
+        </LinearLayout>
+        <Button android:id="@+id/btnDeleteOrder" style="@style/BigButton"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="9dp" android:background="@drawable/btn_outline"
+            android:textColor="@color/red" android:text="@string/delete_order" />
+    </LinearLayout>
+</LinearLayout>

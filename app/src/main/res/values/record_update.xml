@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="record_service_info">Service details</string>
+    <string name="record_status">Status</string>
+    <string name="product_position">Product %1$d of %2$d</string>
+    <string name="record_amounts">Service charge: %1$s\nPaid: %2$s\nRemaining balance: %3$s</string>
+    <string name="record_revenue_detail">%1$d product pieces · Services paid %2$s</string>
+    <string name="record_service_revenue">Service payments: %1$s</string>
+</resources>

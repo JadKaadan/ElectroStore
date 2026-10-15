@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.electrostore.app'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.electrostore.app"
+        minSdk 21
+        targetSdk 34
+        versionCode 39
+        versionName "1.9.25"
+
+        resourceConfigurations += ["en", "ar"]
+    }
+
+
+    def signingKeystore = System.getenv('ELECTROSTORE_KEYSTORE_PATH')
+    def signingStorePassword = System.getenv('ELECTROSTORE_KEYSTORE_PASSWORD')
+    def signingAlias = System.getenv('ELECTROSTORE_KEY_ALIAS')
+    def signingKeyPassword = System.getenv('ELECTROSTORE_KEY_PASSWORD')
+    def signingAvailable = [signingKeystore, signingStorePassword, signingAlias, signingKeyPassword].every { it != null && !it.isEmpty() }
+
+    signingConfigs {
+        if (signingAvailable) {
+            release {
+                storeFile file(signingKeystore)
+                storePassword signingStorePassword
+                keyAlias signingAlias
+                keyPassword signingKeyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            if (signingAvailable) {
+                signingConfig signingConfigs.release
+            }
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+

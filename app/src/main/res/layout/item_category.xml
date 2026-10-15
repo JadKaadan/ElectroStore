@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical" android:gravity="center"
+    android:paddingTop="10dp" android:paddingBottom="10dp"
+    android:paddingStart="4dp" android:paddingEnd="4dp"
+    android:clickable="true" android:focusable="true"
+    android:background="?android:attr/selectableItemBackgroundBorderless">
+
+    <FrameLayout
+        android:layout_width="60dp" android:layout_height="60dp">
+        <View android:id="@+id/circle"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="@drawable/circle_soft" />
+        <TextView android:id="@+id/letter"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:gravity="center" android:textSize="23sp" android:textStyle="bold" />
+        <ImageView android:id="@+id/glyph"
+            android:layout_width="30dp" android:layout_height="30dp"
+            android:layout_gravity="center" android:visibility="gone"
+            android:src="@drawable/ic_box" />
+    </FrameLayout>
+
+    <TextView android:id="@+id/label"
+        android:layout_width="72dp" android:layout_height="wrap_content"
+        android:gravity="center" android:paddingTop="7dp"
+        android:textSize="12sp" android:textStyle="bold" android:textColor="@color/ink_soft"
+        android:singleLine="true" android:ellipsize="end" />
+</LinearLayout>

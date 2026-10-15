@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/host"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <LinearLayout
+            android:id="@+id/navbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/card"
+            android:orientation="horizontal">
+
+            <LinearLayout android:id="@+id/nav0" style="@style/NavCell">
+                <ImageView android:id="@+id/nav0i" style="@style/NavIcon"
+                    android:src="@drawable/ic_box" />
+                <TextView android:id="@+id/nav0t" style="@style/NavText"
+                    android:text="@string/tab_products" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/nav1" style="@style/NavCell">
+                <ImageView android:id="@+id/nav1i" style="@style/NavIcon"
+                    android:src="@drawable/ic_plus" />
+                <TextView android:id="@+id/nav1t" style="@style/NavText"
+                    android:text="@string/tab_add" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/nav2" style="@style/NavCell">
+                <ImageView android:id="@+id/nav2i" style="@style/NavIcon"
+                    android:src="@drawable/ic_tag" />
+                <TextView android:id="@+id/nav2t" style="@style/NavText"
+                    android:text="@string/tab_sell" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/nav3" style="@style/NavCell">
+                <ImageView android:id="@+id/nav3i" style="@style/NavIcon"
+                    android:src="@drawable/ic_chart" />
+                <TextView android:id="@+id/nav3t" style="@style/NavText"
+                    android:text="@string/tab_revenue" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/nav4" style="@style/NavCell">
+                <ImageView android:id="@+id/nav4i" style="@style/NavIcon"
+                    android:src="@drawable/ic_receipt" />
+                <TextView android:id="@+id/nav4t" style="@style/NavText"
+                    android:text="@string/tab_orders" />
+            </LinearLayout>
+            <LinearLayout android:id="@+id/nav5" style="@style/NavCell" android:layout_weight="1.5">
+                <ImageView android:id="@+id/nav5i" style="@style/NavIcon" android:src="@drawable/ic_maintenance" />
+                <TextView android:id="@+id/nav5t" style="@style/NavText"
+                    android:layout_width="match_parent" android:gravity="center"
+                    android:maxLines="2" android:text="@string/tab_maintenance" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/drawerRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <View android:id="@+id/drawerScrim"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="@color/scrim" />
+
+        <LinearLayout
+            android:id="@+id/drawerPanel"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:orientation="vertical"
+            android:background="@color/card"
+            android:elevation="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@drawable/hdr_brand_flat"
+                android:paddingStart="22dp" android:paddingEnd="22dp"
+                android:paddingTop="34dp" android:paddingBottom="24dp">
+                <ImageView android:layout_width="36dp" android:layout_height="36dp"
+                    android:src="@drawable/ic_box" android:tint="@color/ink" />
+                <TextView android:id="@+id/drawerShop"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:paddingTop="12dp" android:textSize="21sp" android:textStyle="bold"
+                    android:textColor="@color/ink" android:singleLine="true"
+                    android:ellipsize="end" />
+                <TextView android:id="@+id/drawerStats" style="@style/HeaderSub"
+                    android:layout_width="match_parent" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent" android:layout_height="0dp"
+                android:layout_weight="1" android:scrollbars="none">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:orientation="vertical"
+                    android:paddingBottom="18dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:background="@drawable/bg_card_line"
+                        android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+                        android:layout_marginTop="16dp" android:padding="16dp">
+
+                        <TextView style="@style/Label"
+                            android:layout_width="match_parent" android:layout_height="wrap_content"
+                            android:paddingStart="0dp" android:text="@string/assets_header" />
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/assets_selling" android:textSize="12sp"
+                            android:textColor="@color/ink_faint" />
+                        <TextView android:id="@+id/assetSellUsd"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="24sp" android:textStyle="bold"
+                            android:textColor="@color/green" />
+                        <TextView android:id="@+id/assetSellLbp"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="12sp" android:textColor="@color/ink_faint" />
+
+                        <View android:layout_width="match_parent" android:layout_height="1dp"
+                            android:background="@color/line"
+                            android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/assets_wholesale" android:textSize="12sp"
+                            android:textColor="@color/ink_faint" />
+                        <TextView android:id="@+id/assetCostUsd"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="24sp" android:textStyle="bold"
+                            android:textColor="@color/orange" />
+                        <TextView android:id="@+id/assetCostLbp"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="12sp" android:textColor="@color/ink_faint" />
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/mCalendar" style="@style/DrawerRow"
+                        android:layout_marginTop="10dp">
+                        <ImageView style="@style/DrawerIcon" android:src="@drawable/ic_calendar" />
+                        <TextView style="@style/DrawerText" android:text="@string/menu_calendar" />
+                    </LinearLayout>
+
+                    <LinearLayout android:id="@+id/mSettings" style="@style/DrawerRow">
+                        <ImageView style="@style/DrawerIcon" android:src="@drawable/ic_settings" />
+                        <TextView style="@style/DrawerText" android:text="@string/settings_title" />
+                    </LinearLayout>
+
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="@color/line"
+                        android:layout_marginTop="10dp" android:layout_marginBottom="18dp"
+                        android:layout_marginStart="22dp" android:layout_marginEnd="22dp" />
+
+                    <TextView style="@style/Label"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:paddingStart="22dp" android:text="@string/lbl_language" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="22dp" android:paddingEnd="22dp">
+                        <TextView android:id="@+id/mLangEn"
+                            android:layout_width="0dp" android:layout_weight="1"
+                            android:layout_height="52dp" android:gravity="center"
+                            android:background="@drawable/btn_outline"
+                            android:text="@string/lang_english"
+                            android:textSize="16sp" android:textStyle="bold"
+                            android:textColor="@color/ink" />
+                        <Space android:layout_width="10dp" android:layout_height="1dp" />
+                        <TextView android:id="@+id/mLangAr"
+                            android:layout_width="0dp" android:layout_weight="1"
+                            android:layout_height="52dp" android:gravity="center"
+                            android:background="@drawable/btn_outline"
+                            android:text="@string/lang_arabic"
+                            android:textSize="16sp" android:textStyle="bold"
+                            android:textColor="@color/ink" />
+                    </LinearLayout>
+
+                    <TextView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" android:paddingTop="24dp"
+                        android:textSize="12sp" android:textColor="@color/ink_faint"
+                        android:text="@string/version_line" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

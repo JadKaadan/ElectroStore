@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <color name="bg">#FFFFFFFF</color>
+    <color name="card">#FFFFFFFF</color>
+    <color name="field">#FFF4F5F7</color>
+    <color name="field_alt">#FFEFF0F3</color>
+    <color name="dash">#FFC9CBD2</color>
+    <color name="line">#FFE7E8EC</color>
+
+
+    <color name="ink">#FF0B0B0D</color>
+    <color name="ink_soft">#FF6B6C74</color>
+    <color name="ink_faint">#FF86878F</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="on_accent">#FFFFFFFF</color>
+
+
+    <color name="brand">#FF0B0B0D</color>
+    <color name="brand_dark">#FF000000</color>
+    <color name="brand_soft">#FFF1F1F3</color>
+
+
+    <color name="tab_products">#FF0B0B0D</color>
+    <color name="tab_add">#FF0B0B0D</color>
+    <color name="tab_sell">#FF0B0B0D</color>
+    <color name="tab_revenue">#FF0B0B0D</color>
+    <color name="tab_orders">#FF0B0B0D</color>
+
+
+    <color name="hdr_products_c">#FFFFFFFF</color>
+    <color name="hdr_add_c">#FFFFFFFF</color>
+    <color name="hdr_sell_c">#FFFFFFFF</color>
+    <color name="hdr_revenue_c">#FFFFFFFF</color>
+    <color name="hdr_orders_c">#FFFFFFFF</color>
+
+
+    <color name="cyan">#FF0B0B0D</color>
+    <color name="cyan_soft">#FFF1F1F3</color>
+    <color name="pink">#FF0B0B0D</color>
+    <color name="pink_soft">#FFF1F1F3</color>
+    <color name="orange">#FF3A3B42</color>
+    <color name="orange_soft">#FFF1F1F3</color>
+
+
+    <color name="green">#FF1E7A54</color>
+    <color name="green_soft">#FFEDF5F1</color>
+    <color name="amber">#FF8A6300</color>
+    <color name="amber_soft">#FFF7F2E7</color>
+    <color name="red">#FFA82A2E</color>
+    <color name="red_soft">#FFF9EDED</color>
+
+    <color name="shadow">#0F000000</color>
+    <color name="scrim">#A6000000</color>
+
+
+    <color name="splash_bg">#FFF4F6F1</color>
+    <color name="splash_ink">#FF11305A</color>
+</resources>

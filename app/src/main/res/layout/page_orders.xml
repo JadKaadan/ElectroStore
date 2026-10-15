@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@drawable/hdr_pink"
+        android:paddingStart="20dp" android:paddingEnd="20dp"
+        android:paddingTop="26dp" android:paddingBottom="22dp">
+        <TextView style="@style/HeaderTitle" android:text="@string/orders_title" />
+        <TextView android:id="@+id/sub" style="@style/HeaderSub"
+            android:text="0 waiting to be collected" />
+    </LinearLayout>
+
+    <Button android:id="@+id/btnNew" style="@style/BigButton"
+        android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp" android:background="@drawable/btn_pink"
+        android:text="@string/new_order_btn" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:scrollbars="none" android:paddingTop="12dp" android:clipToPadding="false">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:paddingStart="16dp" android:paddingEnd="16dp">
+            <Button android:id="@+id/btnAllDates"
+                android:layout_width="wrap_content" android:layout_height="44dp"
+                android:minWidth="0dp" android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:background="@drawable/chip_on" android:textColor="@color/on_accent"
+                android:textStyle="bold" android:textAllCaps="false" android:text="@string/all_dates" />
+            <Space android:layout_width="8dp" android:layout_height="1dp" />
+            <Button android:id="@+id/btnToday"
+                android:layout_width="wrap_content" android:layout_height="44dp"
+                android:minWidth="0dp" android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:background="@drawable/chip" android:textColor="@color/ink_soft"
+                android:textStyle="bold" android:textAllCaps="false" android:text="@string/today" />
+            <Space android:layout_width="8dp" android:layout_height="1dp" />
+            <Button android:id="@+id/btnCalendar"
+                android:layout_width="wrap_content" android:layout_height="44dp"
+                android:minWidth="0dp" android:paddingStart="16dp" android:paddingEnd="16dp"
+                android:background="@drawable/chip" android:textColor="@color/ink_soft"
+                android:textStyle="bold" android:textAllCaps="false" android:text="@string/choose_date"
+                android:drawableStart="@drawable/ic_calendar" android:drawablePadding="7dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView android:id="@+id/filterLabel"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingStart="20dp" android:paddingEnd="20dp"
+        android:paddingTop="12dp" android:paddingBottom="4dp"
+        android:text="@string/all_orders" android:textSize="13sp"
+        android:textStyle="bold" android:textColor="@color/ink_faint" />
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+        <ListView android:id="@+id/list"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:divider="@null" android:dividerHeight="0dp"
+            android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:paddingTop="6dp" android:paddingBottom="16dp" android:clipToPadding="false" />
+        <TextView android:id="@+id/empty"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:gravity="center" android:visibility="gone" android:padding="30dp"
+            android:textSize="17sp" android:textColor="@color/ink_soft"
+            android:text="@string/empty_orders" />
+    </FrameLayout>
+</LinearLayout>

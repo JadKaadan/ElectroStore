@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/monthCard"
+    android:layout_width="154dp" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/bg_card_line"
+    android:paddingStart="13dp" android:paddingEnd="13dp"
+    android:paddingTop="11dp" android:paddingBottom="11dp">
+    <TextView android:id="@+id/monthName"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:maxLines="1" android:textSize="11sp" android:textStyle="bold"
+        android:textColor="@color/ink_soft" />
+    <TextView android:id="@+id/monthAmount"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:maxLines="1" android:paddingTop="3dp" android:textSize="19sp"
+        android:textStyle="bold" android:textColor="@color/ink" />
+    <TextView android:id="@+id/monthDetail"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:maxLines="2" android:paddingTop="2dp" android:textSize="10sp"
+        android:textColor="@color/ink_faint" />
+</LinearLayout>

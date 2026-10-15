@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@drawable/hdr_green"
+        android:paddingStart="20dp" android:paddingEnd="20dp"
+        android:paddingTop="26dp" android:paddingBottom="22dp">
+        <TextView style="@style/HeaderTitle" android:text="@string/add_title" />
+        <TextView style="@style/HeaderSub"
+            android:text="@string/add_sub" />
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/formHost"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

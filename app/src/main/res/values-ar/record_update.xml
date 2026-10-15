@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="record_service_info">معلومات الخدمة</string>
+    <string name="record_status">الحالة</string>
+    <string name="product_position">المنتج %1$d من %2$d</string>
+    <string name="record_amounts">أجرة الخدمة: %1$s\nالمدفوع: %2$s\nالباقي: %3$s</string>
+    <string name="record_revenue_detail">%1$d قطعة منتجات · مدفوعات الخدمات %2$s</string>
+    <string name="record_service_revenue">مدفوعات الخدمات: %1$s</string>
+</resources>

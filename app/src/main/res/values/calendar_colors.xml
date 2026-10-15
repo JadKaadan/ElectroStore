@@ -1,0 +1,9 @@
+<resources>
+<color name="calendar_paper">#FFFCF6</color>
+<color name="calendar_ink">#4D341F</color>
+<color name="calendar_muted">#827466</color>
+<color name="calendar_olive">#8B9F59</color>
+<color name="calendar_white">#FFFFFF</color>
+<color name="calendar_profit">#1E7A54</color>
+<color name="calendar_loss">#A82A2E</color>
+</resources>

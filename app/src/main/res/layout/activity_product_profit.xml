@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/bg">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/hdr_cyan" android:paddingStart="8dp"
+        android:paddingEnd="18dp" android:paddingTop="22dp" android:paddingBottom="20dp">
+        <ImageView android:id="@+id/back"
+            android:layout_width="44dp" android:layout_height="44dp"
+            android:layout_centerVertical="true" android:padding="10dp"
+            android:background="@drawable/circle_soft" android:src="@drawable/ic_back"
+            android:tint="@color/ink" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/back" android:layout_centerVertical="true"
+            android:orientation="vertical" android:paddingStart="12dp">
+            <TextView style="@style/HeaderTitle" android:text="@string/profit_report_title" />
+            <TextView style="@style/HeaderSub" android:text="@string/profit_report_subtitle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingStart="16dp" android:paddingEnd="16dp"
+        android:paddingTop="14dp">
+        <TextView android:id="@+id/btnThisMonth"
+            android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp"
+            android:gravity="center" android:background="@drawable/chip_on"
+            android:clickable="true" android:focusable="true"
+            android:text="@string/this_month" android:textSize="12sp" android:textStyle="bold"
+            android:textColor="@color/on_accent" />
+        <Space android:layout_width="6dp" android:layout_height="1dp" />
+        <TextView android:id="@+id/btnAllTime"
+            android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp"
+            android:gravity="center" android:background="@drawable/chip"
+            android:clickable="true" android:focusable="true"
+            android:text="@string/all_time" android:textSize="12sp" android:textStyle="bold"
+            android:textColor="@color/ink" />
+        <Space android:layout_width="6dp" android:layout_height="1dp" />
+        <TextView android:id="@+id/btnChooseDay"
+            android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp"
+            android:gravity="center" android:background="@drawable/chip"
+            android:clickable="true" android:focusable="true"
+            android:text="@string/profit_choose_day" android:textSize="12sp" android:textStyle="bold"
+            android:textColor="@color/ink" />
+        <Space android:layout_width="6dp" android:layout_height="1dp" />
+        <TextView android:id="@+id/btnThisYear" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp"
+            android:gravity="center" android:background="@drawable/chip" android:clickable="true" android:focusable="true"
+            android:text="@string/profit_this_year" android:textSize="12sp" android:textStyle="bold" android:textColor="@color/ink" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="@drawable/bg_card_line"
+        android:layout_marginStart="16dp" android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp" android:padding="18dp">
+        <TextView android:id="@+id/periodLabel"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/profit_all_time_label" android:textSize="13sp"
+            android:textStyle="bold" android:textColor="@color/ink_faint" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:paddingTop="10dp">
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1.25"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                android:paddingEnd="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/profit_sold_for" android:textSize="12sp"
+                    android:textStyle="bold" android:textColor="@color/ink_soft" />
+                <TextView android:id="@+id/soldUsd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="$0.00" android:textSize="30sp" android:textStyle="bold"
+                    android:textColor="@color/ink" />
+                <TextView android:id="@+id/soldLbp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="0 L.L" android:textSize="12sp" android:textColor="@color/ink_soft" />
+            </LinearLayout>
+            <View android:layout_width="1dp" android:layout_height="56dp"
+                android:background="@color/line" />
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                android:paddingStart="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="@string/profit_services_included" android:textSize="11sp"
+                    android:textStyle="bold" android:textColor="@color/ink_soft" />
+                <TextView android:id="@+id/servicesUsd"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="$0.00" android:textSize="21sp" android:textStyle="bold"
+                    android:textColor="@color/ink" />
+                <TextView android:id="@+id/servicesLbp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="0 L.L" android:textSize="11sp" android:textColor="@color/ink_soft" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="10dp" android:text="@string/profit_services_note"
+            android:textSize="11sp" android:textColor="@color/ink_faint" />
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:layout_marginTop="14dp" android:layout_marginBottom="12dp"
+            android:background="@color/line" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                >
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/profit_wholesale_cost" android:textSize="11sp"
+                    android:textStyle="bold" android:textColor="@color/ink_faint" />
+                <TextView android:id="@+id/costUsd"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:paddingTop="3dp" android:text="$0.00" android:textSize="21sp"
+                    android:textStyle="bold" android:textColor="@color/ink" />
+                <TextView android:id="@+id/costLbp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="0 L.L" android:textSize="11sp" android:textColor="@color/ink_soft" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:id="@+id/profitHeading" android:text="@string/profit_product_profit" android:textSize="11sp"
+                    android:textStyle="bold" android:textColor="@color/ink_faint" />
+                <TextView android:id="@+id/profitUsd"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:paddingTop="3dp" android:text="$0.00" android:textSize="21sp"
+                    android:textStyle="bold" android:textColor="@color/ink" />
+                <TextView android:id="@+id/profitLbp"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="0 L.L" android:textSize="11sp" android:textColor="@color/ink_soft" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/countLine"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="13dp" android:textSize="13sp" android:textColor="@color/ink_soft" />
+        <TextView android:id="@+id/missingCost"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:background="@drawable/pill_amber"
+            android:padding="10dp" android:textSize="12sp" android:textColor="@color/amber"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/profitArchiveSection" android:orientation="vertical" android:layout_margin="16dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:id="@+id/profitCalendarTitle" android:text="@string/profit_year_calendar" android:textColor="@color/ink_faint"
+            android:textStyle="bold" android:textSize="12sp" android:paddingBottom="8dp" />
+        <LinearLayout android:id="@+id/profitYearNavigation" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical">
+            <Button android:id="@+id/profitPreviousYear" android:layout_width="48dp" android:layout_height="48dp"
+                android:text="‹" android:contentDescription="@string/profit_previous_year" android:background="@drawable/chip" android:textColor="@color/ink" />
+            <Button android:id="@+id/profitYearLabel" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp"
+                android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:background="@drawable/chip"
+                android:textColor="@color/ink" android:textSize="18sp" android:textStyle="bold" />
+            <Button android:id="@+id/profitNextYear" android:layout_width="48dp" android:layout_height="48dp"
+                android:text="›" android:contentDescription="@string/profit_next_year" android:background="@drawable/chip" android:textColor="@color/ink" />
+        </LinearLayout>
+        <TextView android:id="@+id/profitYearTotal" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="48dp" android:gravity="center" android:textSize="14sp" android:textStyle="bold"
+            android:clickable="true" android:focusable="true" android:textColor="@color/ink" />
+        <LinearLayout android:id="@+id/profitMonthGrid" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

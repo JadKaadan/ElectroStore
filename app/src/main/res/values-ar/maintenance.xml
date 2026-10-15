@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_maintenance">الصيانة</string>
+    <string name="maintenance_sub">تصليح، تجهيز، وتسليم للزبون.</string>
+    <string name="jobs_active">قيد المتابعة</string>
+    <string name="jobs_overdue">متأخر</string>
+    <string name="job_received">مستلم</string>
+    <string name="job_working">قيد العمل</string>
+    <string name="job_waiting">بانتظار قطعة</string>
+    <string name="job_ready">جاهز</string>
+    <string name="job_collected">تم التسليم</string>
+    <string name="job_cancelled">ملغى</string>
+    <string name="jobs_tab">طلبات الصيانة</string>
+    <string name="services_tab">الخدمات</string>
+    <string name="svc_back">رجوع</string>
+    <string name="svc_menu">افتح القائمة</string>
+    <string name="svc_clear_search">امسح البحث</string>
+    <string name="svc_search">ابحث عن خدمة…</string>
+    <string name="jobs_search">الاسم، الهاتف، الجهاز أو رقم الطلب…</string>
+    <string name="job_add">+ طلب صيانة</string>
+    <string name="svc_add">+ أضف خدمة</string>
+    <string name="svc_restore">إرجاع خدمات محذوفة</string>
+    <string name="svc_empty">ابدأ قائمة خدماتك من هنا.\nأضف خدمة أو أرجع خدمة حذفتها.</string>
+    <string name="svc_no_results">ما في خدمات مطابقة للبحث.</string>
+    <string name="jobs_empty">ما في طلبات قيد المتابعة.\nاضغط + طلب صيانة عند استلام جهاز.</string>
+    <string name="jobs_no_results">ما في طلبات بهالقائمة.\nجرّب الكل أو امسح البحث.</string>
+    <string name="job_choose_service">شو الخدمة المطلوبة؟</string>
+    <string name="svc_start_job">اضغط لفتح طلب ←</string>
+    <string name="svc_manage_named">إدارة %1$s</string>
+    <string name="svc_edit">تعديل الخدمة</string>
+    <string name="svc_remove">إزالة الخدمة</string>
+    <string name="svc_remove_message">إزالة الخدمة من القائمة؟ طلبات الزبائن وخطواتها بتضل محفوظة. فيك ترجع الخدمة لاحقاً.</string>
+    <string name="svc_none_removed">ما في خدمات محذوفة لترجعها.</string>
+    <string name="svc_editor_sub">رتّب قائمة الخدمات حسب شغل المحل.</string>
+    <string name="svc_name">اسم الخدمة</string>
+    <string name="svc_name_hint">مثلاً: تجهيز جهاز ألعاب</string>
+    <string name="svc_override_help">اترك الخانة فاضية للحفاظ على النسخة الجاهزة بالعربي والإنجليزي.</string>
+    <string name="svc_steps">خطواتك السريعة (اختياري)</string>
+    <string name="svc_steps_hint">كل خطوة قصيرة بسطر لحالها</string>
+    <string name="svc_steps_help">لغاية ٣٠ خطوة. إذا تركتها فاضية، بيظهر الدليل أدناه. التعديلات للطلبات الجديدة؛ القوائم القديمة بتضل محفوظة.</string>
+    <string name="svc_default_guide">الدليل الجاهز</string>
+    <string name="svc_save">حفظ الخدمة</string>
+    <string name="svc_required">عبّي هالخانة.</string>
+    <string name="svc_too_many_steps">خلي الدليل ٣٠ خطوة أو أقل.</string>
+    <string name="svc_save_failed">ما قدرنا نحفظ. التعديلات بعدها على الشاشة؛ جرّب مرة تانية.</string>
+    <string name="job_edit">تعديل التفاصيل</string>
+    <string name="job_intake_title">تفاصيل بسيطة، وتسليم أسهل.</string>
+    <string name="job_intake_sub">احفظ اسم الزبون والجهاز والشغل المطلوب. بعدها بتظهر خطوات الخدمة.</string>
+    <string name="job_customer">اسم الزبون *</string>
+    <string name="job_customer_hint">الاسم الكامل</string>
+    <string name="job_country">رمز البلد</string>
+    <string name="job_country_hint">+961</string>
+    <string name="job_phone">رقم واتساب الزبون *</string>
+    <string name="job_phone_hint">70 123 456 أو +961 70 123 456</string>
+    <string name="job_phone_help">رمز البلد أعلاه للأرقام المحلية. الرقم يلي بيبلش بـ + أو 00 بيحتوي رمز بلده.</string>
+    <string name="job_phone_invalid">اكتب رقم هاتف صحيح مع رمز البلد المناسب.</string>
+    <string name="job_device">الجهاز أو القطعة *</string>
+    <string name="job_device_hint">مثلاً: لابتوب Dell أسود مع الشاحن</string>
+    <string name="job_notes">المطلوب وملاحظات الاستلام</string>
+    <string name="job_notes_hint">شو المشكلة؟ شو لازم يتركب؟ اكتب الموديل والرقم التسلسلي والضرر والأغراض المستلمة.</string>
+    <string name="job_due_label">موعد التسليم المتفق عليه (اختياري)</string>
+    <string name="job_choose_due">اختار التاريخ</string>
+    <string name="job_clear_due">امسح موعد التسليم</string>
+    <string name="job_no_due">ما تحدد موعد التسليم</string>
+    <string name="job_due">التسليم: %1$s</string>
+    <string name="job_fee">أجرة الخدمة · دولار (اختياري)</string>
+    <string name="job_paid">المدفوع · دولار (اختياري)</string>
+    <string name="job_amount_hint">0.00</string>
+    <string name="job_money_help">المدفوع يدخل بالإيرادات بتاريخ الدفع. أدخل مجموع ما دفعه الزبون حتى الآن؛ يُسجّل الفرق فقط.</string>
+    <string name="job_paid_invalid">اكتب مبالغ موجبة أو صفر. المدفوع ما لازم يتجاوز أجرة الخدمة.</string>
+    <string name="job_save">حفظ الطلب</string>
+    <string name="job_discard_title">تطلع بلا حفظ؟</string>
+    <string name="job_discard_message">التعديلات بهالصفحة بعدها مش محفوظة.</string>
+    <string name="job_discard">تجاهل التعديلات</string>
+    <string name="job_change_status">تغيير الحالة</string>
+    <string name="job_payment">حساب الخدمة</string>
+    <string name="job_payment_summary">الأجرة %1$s  ·  المدفوع %2$s  ·  الباقي %3$s</string>
+    <string name="job_quick_steps">خطوات سريعة</string>
+    <string name="job_steps_help">علّم كل خطوة لما تخلصها. التقدّم بينحفظ تلقائياً. قبل فتح أي جهاز، اتبع دليل التصليح الخاص بموديله.</string>
+    <string name="job_step_count">%1$d من %2$d خطوات مكتملة</string>
+    <string name="job_start_work">ابدأ أو تابع الشغل</string>
+    <string name="job_mark_ready">جاهز للاستلام</string>
+    <string name="job_notify">رسالة واتساب للاستلام</string>
+    <string name="job_mark_collected">تم التسليم للزبون</string>
+    <string name="job_created_at">تاريخ الاستلام %1$s</string>
+    <string name="job_draft_opened">تم فتح مسودة رسالة الاستلام %1$s. هيدا ما بيأكد إن الرسالة انبعتت.</string>
+    <string name="job_delete">حذف الطلب</string>
+    <string name="job_delete_message">حذف طلب الزبون ومدفوعاته من الإيرادات نهائياً؟</string>
+    <string name="job_collect_message">هل استلم الزبون الجهاز؟ هيك بينتقل الطلب إلى تم التسليم.</string>
+    <string name="job_cancel_message">إلغاء هالطلب؟ بيضل بالسجل وفيك ترجع تفتحه.</string>
+    <string name="job_confirm">تأكيد</string>
+    <string name="job_message_title">راجع رسالة الاستلام</string>
+    <string name="job_message_to">رقم الزبون: %1$s</string>
+    <string name="job_open_whatsapp">افتح واتساب</string>
+    <string name="job_message_help">تأكد من الرقم وعدّل النص إذا لازم. واتساب بيفتح مسودة وإنت بتضغط إرسال من هناك. إرسال الرسالة بحاجة لإنترنت بواتساب.</string>
+    <string name="job_whatsapp_missing">ثبّت واتساب أو متصفح لتفتح المحادثة.</string>
+    <string name="job_pickup_template">مرحباً %1$s، جهازك %2$s صار جاهز للاستلام!\nالخدمة المنجزة: %3$s.\nفيك تمرّ وتستلمه من %4$s. شكراً إلك!\nرقم الطلب: %5$s</string>
+    <string name="stock_save_failed">ما تمت البيعة. يمكن المنتج تغيّر؛ ارجع وجرّب مرة تانية.</string>
+    <string name="backup_maintenance"> · %1$d طلب صيانة · %2$d خدمة</string>
+    <string name="svc_custom">خدمة خاصة</string>
+    <string name="svc_format">فورمات وتجهيز النظام</string>
+    <string name="svc_apps">تثبيت البرامج والتطبيقات</string>
+    <string name="svc_diagnosis">فحص الجهاز</string>
+    <string name="svc_repair">تصليح الأعطال</string>
+    <string name="svc_cleanup">تنظيف وتبريد</string>
+    <string name="svc_backup">نسخ احتياطي ونقل ملفات</string>
+    <string name="svc_security">إزالة الفيروسات والإعلانات</string>
+    <string name="svc_upgrade">ترقية الذاكرة والتخزين</string>
+    <string name="svc_screen">تبديل الشاشة</string>
+    <string name="svc_battery">فحص البطارية والشحن</string>
+    <string name="svc_printer">تجهيز وتصليح الطابعات</string>
+    <string name="svc_wifi">تجهيز الراوتر والواي فاي</string>
+    <string-array name="tips_format">
+        <item>اسأل شو لازم ينحفظ، واتفق مع الزبون على الفورمات قبل حذف أي شي.</item>
+        <item>انسخ الملفات المهمة على قرص منفصل وافتح كم ملف لتتأكد من النسخة.</item>
+        <item>خلّي صاحب الجهاز يتأكد إنه قادر يدخل على حسابه، ومعه مفتاح الاسترداد إذا القرص مقفول.</item>
+        <item>استخدم ملفات تثبيت رسمية ومناسبة للجهاز، وخلي الشاحن موصول.</item>
+        <item>رجّع الملفات المتفق عليها. جرّب التشغيل والواي فاي والصوت والبرامج مع الزبون.</item>
+    </string-array>
+    <string-array name="tips_apps">
+        <item>اكتب أسماء البرامج والنسخ يلي بدها الزبون.</item>
+        <item>تأكد إن الجهاز فيه مساحة كافية وبيدعم هالبرامج.</item>
+        <item>استخدم المتجر الرسمي أو ملف الشركة، وتأكد من الترخيص مع صاحب الجهاز.</item>
+        <item>خلّي الزبون يدخل كلمات مروره بنفسه. افتح كل برنامج بعد التثبيت.</item>
+        <item>جرّب الوظيفة الأساسية وفرجي الزبون وين بيلاقي البرنامج.</item>
+    </string-array>
+    <string-array name="tips_diagnosis">
+        <item>اسأل إمتى بلشت المشكلة وشو صار قبلها.</item>
+        <item>دوّن الموديل والضرر الظاهر والشاحن وأي رسالة خطأ.</item>
+        <item>جرّب تظهر المشكلة. بلّش بالكهرباء والكابلات وإعادة التشغيل العادية.</item>
+        <item>افحص شغلة وحدة كل مرة ودوّن النتيجة.</item>
+        <item>اشرح شو لقيت واتفق على التصليح التالي والتكلفة.</item>
+    </string-array>
+    <string-array name="tips_repair">
+        <item>تأكد من العطل وسجّل حالة الجهاز قبل ما تبلّش.</item>
+        <item>اشرح التصليح المقترح وخد موافقة الزبون على التكلفة.</item>
+        <item>طفّي الجهاز وافصل الكهرباء. اتبع دليل الموديل لفتح الجهاز وفصل البطارية.</item>
+        <item>رتّب البراغي مع تسميات، واستخدم قطع متوافقة وعدّة مناسبة.</item>
+        <item>ركّب الجهاز وجرّب نفس العطل من جديد وافحص الوظائف الأساسية.</item>
+    </string-array>
+    <string-array name="tips_cleanup">
+        <item>اسأل عن الصوت أو الحرارة وافحص إذا في ضرر.</item>
+        <item>طفّي الجهاز وافصل الكهرباء واتبع دليله قبل فتحه.</item>
+        <item>نظّف الخارج بقماشة ناعمة بلا وبر، وخلي السوائل بعيدة عن الفتحات.</item>
+        <item>اتبع طريقة الشركة لتنظيف الفتحات والمراوح. ما ترش سائل داخل الجهاز.</item>
+        <item>سكّر الجهاز منيح وافحص صوت المروحة وحرارته بالتشغيل العادي.</item>
+    </string-array>
+    <string-array name="tips_backup">
+        <item>اسأل شو الملفات المطلوبة ولوين لازم تنتقل.</item>
+        <item>تأكد إن المكان الجديد فيه مساحة فاضية كافية.</item>
+        <item>انسخ الملفات وخلي الأصل لحد ما الزبون يتأكد من النسخة.</item>
+        <item>افتح كم صورة ومستند من المكان الجديد.</item>
+        <item>خلّي الزبون يتأكد من ملفاته المهمة وسلّمه قرص النسخة الاحتياطية.</item>
+    </string-array>
+    <string-array name="tips_security">
+        <item>اسأل عن الإعلانات أو البرامج الغريبة واحمِ الملفات المهمة أولاً.</item>
+        <item>إذا في شك باختراق، افصل الجهاز المصاب عن الشبكة.</item>
+        <item>استخدم برنامج الحماية المدمج أو فاحص رسمي موثوق واعمل فحص كامل.</item>
+        <item>راجع البرامج والإضافات وأذونات إشعارات المتصفح الغريبة مع صاحب الجهاز.</item>
+        <item>أعد التشغيل وافحص. إذا الحساب انكشف، خلّي صاحبه يغيّر كلمة مروره من جهاز سليم.</item>
+    </string-array>
+    <string-array name="tips_upgrade">
+        <item>تأكد من الموديل ونوع القطعة المدعومة والأماكن المتوفرة.</item>
+        <item>اعمل نسخة للملفات قبل تغيير قرص التخزين، واتفق على القطعة والتكلفة.</item>
+        <item>طفّي وافصل الكهرباء، واتبع دليل الموديل لفصل البطارية وتركيب القطعة.</item>
+        <item>تأكد إن النظام تعرف على الذاكرة أو القرص الجديد وبالسعة الصحيحة.</item>
+        <item>جرّب التشغيل وافتح ملفات وبرامج. رجّع القطعة القديمة إذا هيك اتفقتوا.</item>
+    </string-array>
+    <string-array name="tips_screen">
+        <item>دوّن الموديل وجرّب اللمس والشاشة والكاميرات قبل التصليح.</item>
+        <item>تأكد إن الشاشة البديلة متوافقة واتفق على السعر.</item>
+        <item>طفّي الجهاز واتبع دليل موديله. وقف إذا البطارية باين عليها ضرر.</item>
+        <item>رتّب البراغي والكابلات وما تضغط عالوصلات بالقوة.</item>
+        <item>جرّب اللمس بكل الشاشة والإضاءة والكاميرات والأزرار قبل التسليم.</item>
+    </string-array>
+    <string-array name="tips_battery">
+        <item>اسأل قديش بتدوم الشحنة وإذا الجهاز بيسخن بشكل غير طبيعي.</item>
+        <item>ما تستخدم أو تشحن بطارية منفوخة أو بتسرّب أو سخنة كتير. حوّلها لفني مؤهل.</item>
+        <item>إذا ما في ضرر، جرّب كابل وشاحن متوافقين ومتأكد إنهم شغالين.</item>
+        <item>افحص مدخل الشحن بلا إدخال معدن. اتبع دليل الشركة لأي تبديل.</item>
+        <item>جرّب الشحن والاستخدام العادي واشرح النتيجة للزبون.</item>
+    </string-array>
+    <string-array name="tips_printer">
+        <item>اكتب الموديل وتأكد من الورق والحبر أو التونر وأضواء الخطأ.</item>
+        <item>تأكد من الكهرباء وكابل USB أو إن الجهازين ع نفس الواي فاي.</item>
+        <item>ثبّت التعريف الرسمي المناسب للطابعة والكمبيوتر.</item>
+        <item>امسح مهام الطباعة العالقة واطبع صفحة تجريبية.</item>
+        <item>جرّب مستند بيستخدمه الزبون عادة، وجرّب السكانر إذا موجود.</item>
+    </string-array>
+    <string-array name="tips_wifi">
+        <item>اسأل إذا المشكلة بجهاز واحد أو عند الكل.</item>
+        <item>تأكد من الكابلات والأضواء وأعد التشغيل العادي. ما تعمل ضبط مصنع بلا موافقة صاحب الراوتر.</item>
+        <item>تأكد من اسم الشبكة وكلمة المرور مع صاحبها، واحفظ إعدادات المزوّد قبل تغييرها.</item>
+        <item>استخدم إعدادات الحماية المدعومة بالراوتر وكلمة مرور قوية بيختارها صاحبه.</item>
+        <item>جرّب موقع على جهازين وفرجي صاحب الشبكة كيف يعيد الاتصال.</item>
+    </string-array>
+    <string-array name="tips_custom">
+        <item>اسأل شو المطلوب من الزبون ودوّنه.</item>
+        <item>سجّل حالة الجهاز والأغراض المستلمة معه.</item>
+        <item>اتفق على الشغل والسعر والملفات يلي لازم تنحفظ.</item>
+        <item>نفّذ الشغل المتفق عليه وجرّب النتيجة.</item>
+        <item>اشرح شو صار وتأكد من كل شي مع الزبون.</item>
+    </string-array>
+</resources>

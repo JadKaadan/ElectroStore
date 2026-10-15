@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+<string name="simple_add">Add service</string>
+<string name="simple_edit">Edit service</string>
+<string name="simple_service">Service</string>
+<string name="simple_product">Product / device name</string>
+<string name="simple_customer">Customer name (optional)</string>
+<string name="simple_phone">Phone number (optional)</string>
+<string name="simple_paid">Amount paid · USD</string>
+<string name="simple_paid_value">Paid %1$s</string>
+<string name="simple_day_total">TOTAL FOR THIS DAY</string>
+<string name="simple_empty">No services recorded on this day.</string>
+<string name="simple_prev">Previous month</string>
+<string name="simple_next">Next month</string>
+<string name="simple_invalid_paid">Enter a valid amount from 0 to 1,000,000,000.</string>
+<string name="simple_delete_message">Delete this service record? Its payments will also be removed from revenue.</string>
+</resources>

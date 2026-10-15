@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/bg_sheet"
+    android:paddingStart="20dp" android:paddingEnd="20dp"
+    android:paddingTop="10dp" android:paddingBottom="12dp">
+
+    <View android:layout_width="42dp" android:layout_height="4dp"
+        android:layout_gravity="center_horizontal" android:background="@drawable/grabber" />
+
+    <TextView android:id="@+id/kpLabel"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="10dp" android:textSize="12sp" android:textStyle="bold"
+        android:letterSpacing="0.06" android:textColor="@color/ink_soft" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="bottom" android:paddingTop="6dp">
+        <TextView android:id="@+id/kpValue"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="32sp" android:textStyle="bold"
+            android:letterSpacing="-0.02" android:textColor="@color/ink"
+            android:singleLine="true" android:ellipsize="start" />
+
+        <TextView android:id="@+id/kpUsd"
+            android:layout_width="wrap_content" android:layout_height="42dp"
+            android:gravity="center" android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:background="@drawable/chip_on" android:text="@string/usd_symbol"
+            android:textStyle="bold" android:textSize="15sp" android:textColor="@color/on_accent" />
+        <Space android:layout_width="8dp" android:layout_height="1dp" />
+        <TextView android:id="@+id/kpLbp"
+            android:layout_width="wrap_content" android:layout_height="42dp"
+            android:gravity="center" android:paddingStart="14dp" android:paddingEnd="14dp"
+            android:background="@drawable/chip" android:text="@string/lbp_suffix"
+            android:textStyle="bold" android:textSize="14sp" android:textColor="@color/ink_soft" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/kpEcho"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="2dp" android:paddingBottom="2dp"
+        android:textSize="14sp" android:textColor="@color/ink_faint" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/line" android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout android:id="@+id/kpGrid"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingTop="8dp">
+        <Button android:id="@+id/kpCancel" style="@style/SheetButton"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:background="@drawable/btn_outline" android:textColor="@color/ink"
+            android:text="@string/cancel" />
+        <Space android:layout_width="10dp" android:layout_height="1dp" />
+        <Button android:id="@+id/kpDone" style="@style/SheetButton"
+            android:layout_width="0dp" android:layout_weight="2"
+            android:background="@drawable/btn_brand" android:text="@string/kp_done" />
+    </LinearLayout>
+</LinearLayout>

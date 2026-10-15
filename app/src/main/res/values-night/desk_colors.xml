@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="desk_bg">@color/bg</color>
+    <color name="desk_surface">@color/card</color>
+    <color name="desk_ink">@color/ink</color>
+    <color name="desk_soft">@color/ink_soft</color>
+    <color name="desk_accent">@color/ink</color>
+    <color name="desk_tint">@color/field_alt</color>
+    <color name="desk_line">@color/line</color>
+    <color name="desk_peach">@color/field_alt</color>
+    <color name="desk_peach_ink">@color/ink_soft</color>
+    <color name="desk_lilac">@color/field_alt</color>
+    <color name="desk_lilac_ink">@color/ink_soft</color>
+    <color name="desk_hero_start">@color/card</color>
+    <color name="desk_hero_end">@color/field_alt</color>
+    <color name="desk_hero_ink">@color/ink</color>
+    <color name="desk_hero_soft">@color/ink_soft</color>
+</resources>

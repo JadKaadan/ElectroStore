@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/hdr_brand" android:paddingStart="8dp"
+        android:paddingEnd="20dp" android:paddingTop="22dp" android:paddingBottom="20dp">
+        <ImageView android:id="@+id/back" android:tint="@color/ink" android:layout_width="44dp" android:layout_height="44dp"
+            android:padding="10dp" android:background="@drawable/circle_soft"
+            android:src="@drawable/ic_back" android:layout_centerVertical="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="vertical" android:layout_toEndOf="@id/back"
+            android:layout_centerVertical="true" android:paddingStart="12dp">
+            <TextView style="@style/HeaderTitle" android:text="@string/settings_title" />
+            <TextView style="@style/HeaderSub" android:text="@string/settings_sub" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/lbl_language" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/langEn"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="58dp" android:gravity="center"
+                    android:background="@drawable/btn_outline" android:text="@string/lang_english"
+                    android:textSize="17sp" android:textStyle="bold" android:textColor="@color/ink" />
+                <Space android:layout_width="10dp" android:layout_height="1dp" />
+                <TextView android:id="@+id/langAr"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="58dp" android:gravity="center"
+                    android:background="@drawable/btn_outline" android:text="@string/lang_arabic"
+                    android:textSize="17sp" android:textStyle="bold" android:textColor="@color/ink" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/line" android:layout_marginTop="22dp"
+                android:layout_marginBottom="18dp" />
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/lbl_shop_name" />
+            <EditText android:id="@+id/fShop" style="@style/Field"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_shop_name" android:inputType="textCapWords" android:singleLine="true" />
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="16dp"
+                android:text="@string/lbl_shop_info" />
+            <EditText android:id="@+id/fShopInfo" style="@style/Field"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="@string/hint_shop_info" android:singleLine="true" />
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="16dp"
+                android:text="@string/lbl_rate" />
+            <EditText android:id="@+id/fRate" style="@style/Field"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="89500" android:inputType="numberDecimal" android:singleLine="true" />
+            <TextView android:id="@+id/rateEcho"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="6dp" android:paddingStart="6dp"
+                android:textSize="13sp" android:textColor="@color/ink_faint" />
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="16dp"
+                android:text="@string/lbl_low_stock" />
+            <EditText android:id="@+id/fLow" style="@style/Field"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:hint="3" android:inputType="number" android:singleLine="true" />
+
+            <Button android:id="@+id/btnSave" style="@style/BigButton"
+                android:layout_marginTop="22dp" android:background="@drawable/btn_brand"
+                android:text="@string/save_settings" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/line" android:layout_marginTop="26dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/categories_label" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/ink_soft"
+                android:paddingBottom="12dp" android:text="@string/categories_blurb" />
+            <Button android:id="@+id/btnCategories" style="@style/BigButton"
+                android:background="@drawable/btn_outline" android:textColor="@color/ink"
+                android:text="@string/categories_manage" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/line" android:layout_marginTop="26dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/lbl_pin" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/ink_soft"
+                android:paddingBottom="12dp" android:text="@string/pin_blurb" />
+            <TextView android:id="@+id/pinStatus"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="15sp" android:textStyle="bold" android:textColor="@color/ink"
+                android:paddingBottom="12dp" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/btnPinSet" style="@style/BigButton"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:background="@drawable/btn_brand" android:text="@string/pin_set_btn" />
+                <Space android:layout_width="10dp" android:layout_height="1dp" />
+                <Button android:id="@+id/btnPinRemove" style="@style/BigButton"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:background="@drawable/btn_outline" android:textColor="@color/red"
+                    android:text="@string/pin_remove_btn" />
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:background="@color/line" android:layout_marginTop="26dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/lbl_printer" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/ink_soft"
+                android:paddingBottom="12dp" android:text="@string/printer_blurb" />
+            <TextView android:id="@+id/printerStatus"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="15sp" android:textStyle="bold" android:textColor="@color/ink"
+                android:paddingBottom="14dp" />
+
+            <TextView style="@style/Label" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="@string/lbl_paper" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:paddingBottom="14dp">
+                <TextView android:id="@+id/paper58"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="52dp" android:gravity="center"
+                    android:background="@drawable/btn_outline" android:text="@string/paper_58"
+                    android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ink" />
+                <Space android:layout_width="10dp" android:layout_height="1dp" />
+                <TextView android:id="@+id/paper80"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="52dp" android:gravity="center"
+                    android:background="@drawable/btn_outline" android:text="@string/paper_80"
+                    android:textSize="16sp" android:textStyle="bold" android:textColor="@color/ink" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button android:id="@+id/btnPickPrinter" style="@style/BigButton"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:background="@drawable/btn_brand" android:text="@string/printer_pick" />
+                <Space android:layout_width="10dp" android:layout_height="1dp" />
+                <Button android:id="@+id/btnTestPrint" style="@style/BigButton"
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:background="@drawable/btn_outline" android:textColor="@color/ink"
+                    android:text="@string/printer_test" />
+            </LinearLayout>
+            <Button android:id="@+id/btnForgetPrinter" style="@style/BigButton"
+                android:layout_marginTop="10dp" android:background="@drawable/btn_outline"
+                android:textColor="@color/ink_soft" android:text="@string/printer_forget" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/backup_header" android:textSize="13sp" android:textStyle="bold"
+                android:textColor="@color/ink_faint" android:paddingBottom="6dp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/ink_soft"
+                android:paddingBottom="12dp"
+                android:text="@string/backup_blurb" />
+            <Button android:id="@+id/btnBackup" style="@style/BigButton"
+                android:background="@drawable/btn_outline" android:textColor="@color/ink"
+                android:text="@string/backup_btn" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="14sp" android:textColor="@color/ink_soft"
+                android:paddingTop="20dp" android:paddingBottom="12dp"
+                android:text="@string/restore_blurb" />
+
+            <Button android:id="@+id/btnRestore" style="@style/BigButton"
+                android:background="@drawable/btn_outline" android:textColor="@color/red"
+                android:text="@string/restore_btn" />
+
+            <TextView android:id="@+id/stats"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:paddingTop="26dp" android:gravity="center"
+                android:textSize="13sp" android:textColor="@color/ink_faint" />
+
+            <Space android:layout_width="match_parent" android:layout_height="20dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

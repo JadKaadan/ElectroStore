@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><resources>
+<string name="simple_add">إضافة خدمة</string>
+<string name="simple_edit">تعديل الخدمة</string>
+<string name="simple_service">الخدمة</string>
+<string name="simple_product">اسم المنتج / الجهاز</string>
+<string name="simple_customer">اسم الزبون (اختياري)</string>
+<string name="simple_phone">رقم الهاتف (اختياري)</string>
+<string name="simple_paid">المبلغ المدفوع · دولار</string>
+<string name="simple_paid_value">المدفوع %1$s</string>
+<string name="simple_day_total">مجموع هذا اليوم</string>
+<string name="simple_empty">لا توجد خدمات مسجلة بهذا اليوم.</string>
+<string name="simple_prev">الشهر السابق</string>
+<string name="simple_next">الشهر التالي</string>
+<string name="simple_invalid_paid">أدخل مبلغاً صحيحاً بين 0 و1,000,000,000.</string>
+<string name="simple_delete_message">حذف سجل الخدمة؟ سيتم حذف مدفوعاته من الإيرادات أيضاً.</string>
+</resources>
